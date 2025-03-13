@@ -1,0 +1,124 @@
+version: "3.1"
+
+nlu:
+
+# 1. Greeting
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey
+    - Good morning
+    - Good evening
+    - Hello, I need help
+    - Hey, can you assist me?
+    - Hi, I am not feeling well
+    - Hello, I am a Health Helper Bot. How can I help you?
+
+# 2. Fever Symptoms
+- intent: ask_fever
+  examples: |
+    - I have a fever
+    - My body feels hot
+    - I am feeling feverish
+    - I have a high temperature
+    - My temperature is above normal
+    - I am shivering and feeling cold
+    - I have a fever and a runny nose
+    - My fever is making me feel weak
+    - I have a cold and a fever
+    - I have nausea and feel feverish
+    - I am vomiting and have a fever
+
+- intent: provide_temperature
+  examples: |
+    - My body temperature is [98.6](body_temperature)
+    - It is around [99](body_temperature)
+    - I checked, and it is [101](body_temperature)
+    - The thermometer shows [100.5](body_temperature)
+    - My temperature is [102](body_temperature)
+
+# 3. Skin Issues (Itching, Allergies)
+- intent: ask_skin_issue
+  examples: |
+    - I have skin itching
+    - My skin is itchy and red
+    - I have an allergic reaction
+    - My skin is irritated
+    - I think I have a rash
+    - My skin is burning and itching
+    - I am having skin allergies
+    - My skin is swelling due to an allergy
+
+# 4. Muscle Pain or Swelling
+- intent: ask_muscle_pain
+  examples: |
+    - I have muscle pain
+    - My leg is swollen
+    - My hand is swollen
+    - I feel pain in my muscles
+    - My leg is hurting a lot
+    - My hand is paining badly
+    - I have swelling in my joints
+    - My muscles are aching after exercise
+    - I have a sprain in my leg
+
+# 5. Eye-Related Problems
+- intent: ask_eye_problem
+  examples: |
+    - I have an eye problem
+    - My vision is blurry
+    - My eyes are red and irritated
+    - I have pain in my eye
+    - My eyes are swollen
+    - My eyes are watering continuously
+    - I am feeling pressure in my eyes
+    - I have an eye infection
+
+# 6. Ear, Nose, and Throat (ENT) Problems
+- intent: ask_ent_problem
+  examples: |
+    - I have an ear problem
+    - My throat is sore
+    - My nose is blocked
+    - My ears are hurting
+    - My throat feels dry and painful
+    - My nose is bleeding
+    - My ears are ringing constantly
+    - I feel pain in my throat when swallowing
+    - I have sinus pain in my nose
+
+# 7. Heart-Related Issues
+- intent: ask_heart_pain
+  examples: |
+    - I have chest pain
+    - My heart is beating very fast
+    - I am feeling pain in my heart
+    - My chest feels tight
+    - I feel pressure in my heart area
+    - I think I am having a heart problem
+    - I have difficulty breathing with chest pain
+    - My heart is beating irregularly
+    - I have pain in my left arm and chest
+
+# 8. Nearest Hospital Location
+- intent: ask_hospital_location
+  examples: |
+    - Where is the nearest hospital?
+    - Show me the hospital near my location
+    - Find a nearby hospital for me
+    - I need directions to the nearest hospital
+    - Can you tell me the closest hospital?
+    - Help me locate a hospital
+    - Book an appointment at a hospital
+
+# 9. Thank You & Get Well Soon
+- intent: thank_you
+  examples: |
+    - Thank you
+    - Thanks a lot
+    - I appreciate your help
+    - Thank you so much
+    - Thanks, I feel better now
+    - Thanks for the help, I will visit a doctor
+    - Thank you, get well soon
