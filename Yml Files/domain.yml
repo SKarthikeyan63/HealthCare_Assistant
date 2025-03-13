@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_fever
+  - provide_temperature
+  - ask_skin_issue
+  - ask_muscle_pain
+  - ask_eye_problem
+  - ask_ent_problem
+  - ask_heart_pain
+  - ask_hospital_location
+  - thank_you
+
+entities:
+  - body_temperature
+
+slots:
+  body_temperature:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: body_temperature
+
+responses:
+  utter_greet:
+    - text: "Hello, I am a Health Helper Bot. How can I help you?"
+
+  utter_fever_low:
+    - text: "Nothing to worry, you are normal. It's due to climate change."
+
+  utter_fever_high:
+    - text: "You are having a fever. Take paracetamol 500mg and rest for one hour. If the condition worsens, go to the hospital."
+
+  utter_skin_issue:
+    - text: "Take an antihistamine tablet 500mg or apply hydrocortisone cream. Rest for one hour. If the condition worsens, visit a hospital."
+
+  utter_muscle_pain:
+    - text: "Take a paracetamol 500mg and apply a sprain relief spray. Rest for one hour. If the condition worsens, visit a hospital."
+
+  utter_eye_problem:
+    - text: "Go to the nearby hospital and consult an Ophthalmologist."
+
+  utter_ent_problem:
+    - text: "Go to the nearby hospital and consult an ENT specialist."
+
+  utter_heart_pain:
+    - text: "Take aspirin chew 320mg and go to the nearest hospital immediately. Inform them about your symptoms and the medication taken."
+
+  utter_hospital_location:
+    - text: "Here is the nearest hospital location: [Hospital Location]. You can book an appointment if needed."
+
+  utter_thank_you:
+    - text: "Thank you. Get well soon!"
+
+actions:
+  - action_check_fever
+  - action_show_hospital

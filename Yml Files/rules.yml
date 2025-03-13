@@ -1,0 +1,52 @@
+version: "3.1"
+
+rules:
+- rule: Greet the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Handle Fever without temperature
+  steps:
+  - intent: ask_fever
+  - action: utter_fever_low
+
+- rule: Handle Fever with temperature
+  steps:
+  - intent: provide_temperature
+  - action: action_check_fever
+
+- rule: Handle Skin Issue
+  steps:
+  - intent: ask_skin_issue
+  - action: utter_skin_issue
+
+- rule: Handle Muscle Pain
+  steps:
+  - intent: ask_muscle_pain
+  - action: utter_muscle_pain
+
+- rule: Handle Eye Problem
+  steps:
+  - intent: ask_eye_problem
+  - action: utter_eye_problem
+
+- rule: Handle ENT Problem
+  steps:
+  - intent: ask_ent_problem
+  - action: utter_ent_problem
+
+- rule: Handle Heart Pain
+  steps:
+  - intent: ask_heart_pain
+  - action: utter_heart_pain
+
+- rule: Handle Hospital Location
+  steps:
+  - intent: ask_hospital_location
+  - action: action_show_hospital
+
+- rule: Handle Thank You
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you

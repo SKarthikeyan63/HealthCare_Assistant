@@ -1,0 +1,54 @@
+version: "3.1"
+
+stories:
+- story: Greet User
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Check Fever
+  steps:
+  - intent: ask_fever
+  - action: utter_fever_low
+
+- story: Check Fever with Temperature
+  steps:
+  - intent: ask_fever
+  - action: utter_fever_low
+  - intent: provide_temperature
+  - action: action_check_fever
+
+- story: Skin Issue Advice
+  steps:
+  - intent: ask_skin_issue
+  - action: utter_skin_issue
+
+- story: Muscle Pain Advice
+  steps:
+  - intent: ask_muscle_pain
+  - action: utter_muscle_pain
+
+- story: Eye Problem Advice
+  steps:
+  - intent: ask_eye_problem
+  - action: utter_eye_problem
+
+- story: ENT Problem Advice
+  steps:
+  - intent: ask_ent_problem
+  - action: utter_ent_problem
+
+- story: Heart Pain Advice
+  steps:
+  - intent: ask_heart_pain
+  - action: utter_heart_pain
+
+- story: Find Nearest Hospital
+  steps:
+  - intent: ask_hospital_location
+  - action: action_show_hospital
+
+- story: Thank You
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
