@@ -1,0 +1,49 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url(Screenshot\ 2025-03-09\ 125335.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.chat-container {
+  width: 500px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.chat-box {
+  height: 230px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 50px;
+  margin-bottom: 10px;
+
+}
+
+.input-area {
+  display: flex;
+  gap: 5px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
